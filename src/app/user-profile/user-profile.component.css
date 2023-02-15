@@ -1,0 +1,22 @@
+.card--body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 8px 2px black;
+  width: fit-content;
+}
+
+div {
+margin: auto;
+margin-bottom: 10px;
+}
+
+input {
+margin: auto;
+width: 250px;
+border-radius: px;
+}
+button {
+margin-top: 10px;
+padding: 4px;
+}

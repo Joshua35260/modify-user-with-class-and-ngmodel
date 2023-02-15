@@ -1,0 +1,22 @@
+<div class="card--body">
+  <div class="card--header">
+    <img [src]="user.photo" />
+  </div>
+  <div class="card--title">
+    <h1>
+      <strong>Hello {{ user.name }}</strong>
+    </h1>
+  </div>
+  <div class="card--age" [hidden]="!displayAge">Âge : {{ user.age }}</div>
+  <div *ngIf="displayAge">
+    <button (click)="displayAge = !displayAge">Hide</button>
+  </div>
+  <div *ngIf="!displayAge">
+    <button (click)="displayAge = !displayAge">Show</button>
+  </div>
+  <div class="card--citation">
+    Citation: {{ user.quote }} <br />
+    <button (click)="clear()">Clear</button>
+  </div>
+  <input [(ngModel)]="user.quote" /><br /><br />
+</div>
